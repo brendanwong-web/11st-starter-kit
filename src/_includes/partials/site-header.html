@@ -5,38 +5,34 @@
         <img
           alt="11st starter-kit logo"
           class="h-8 w-auto"
-          src="/images/11st-logo.svg"
+          src="/images/drawing.png"
         />
-        <figcaption>Starter-Kit</figcaption>
       </figure>
-      <ul class="flex space-x-4">
-        {% for item in navigation.items %}
-          {% if item.url == page.url %}
-            {% assign highlight = 'cursor-default' %}
-            {% assign current = 'aria-current="page"' %}
-          {% else %}
-            {% assign highlight = 'underline' %}
-            {% assign current = '' %}
-          {% endif %}
-          <li>
-            <a
-              href="{{ item.url }}"
-              class="text-base font-bold {{ highlight }}"
-              {{ current }}
-            >
-              {{ item.text }}
-            </a>
-          </li>
-        {% endfor %}
-        <li>
-          <a
-            href="https://github.com/stefanfrede/11st-starter-kit/"
-            class="text-base font-bold underline hover:text-green-900"
-          >
-            GitHub
-          </a>
-        </li>
-      </ul>
+      <div x-data="{show: false}">
+        <button class="hamburger" @click="show=!show">
+          <div class="hamburger__line"></div>
+        </button>
+        <ul x-show="show" x-transition class="flex flex-col bg-white p-4 absolute inset-0">
+          {% for item in navigation.items %}
+            {% if item.url == page.url %}
+              {% assign highlight = 'cursor-default' %}
+              {% assign current = 'aria-current="page"' %}
+            {% else %}
+              {% assign highlight = 'underline' %}
+              {% assign current = '' %}
+            {% endif %}
+            <li>
+              <a
+                href="{{ item.url }}"
+                class="text-base font-bold p-y-20 {{ highlight }}"
+                {{ current }}
+              >
+                {{ item.text }}
+              </a>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
     </div>
   </nav>
 </header>

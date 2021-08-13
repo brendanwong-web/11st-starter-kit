@@ -17,3 +17,8 @@ if ('serviceWorker' in navigator && env === 'production') {
     }
   });
 }
+
+$('.hamburger').on('click', function() {
+  $('header nav').toggleClass('active')
+  $(this).toggleClass('active');
+})
