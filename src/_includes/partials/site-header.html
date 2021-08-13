@@ -8,23 +8,23 @@
           src="/images/drawing.png"
         />
       </figure>
-      <div x-data="{show: false}">
-        <button class="hamburger" @click="show=!show">
+      <div x-data="{navOpen: false}">
+        <button x-data class="hamburger" x-on:click="$store.nav.toggle()" x-bind:class="{active: $store.nav.show}">
           <div class="hamburger__line"></div>
         </button>
-        <ul x-show="show" x-transition class="flex flex-col bg-white p-4 absolute inset-0">
+        <ul x-data x-bind:class="{active: $store.nav.show}" x-transition class="flex flex-col bg-white p-4 absolute inset-0 nav-items text-center pt-12 h-screen">
           {% for item in navigation.items %}
             {% if item.url == page.url %}
-              {% assign highlight = 'cursor-default' %}
+              {% assign highlight = 'cursor-default text-6xl underline' %}
               {% assign current = 'aria-current="page"' %}
             {% else %}
-              {% assign highlight = 'underline' %}
+              {% assign highlight = 'text-5xl' %}
               {% assign current = '' %}
             {% endif %}
-            <li>
+            <li class="py-6">
               <a
                 href="{{ item.url }}"
-                class="text-base font-bold p-y-20 {{ highlight }}"
+                class="font-bold {{ highlight }}"
                 {{ current }}
               >
                 {{ item.text }}

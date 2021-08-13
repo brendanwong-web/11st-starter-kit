@@ -1,8 +1,17 @@
 import Alpine from 'alpinejs';
 
-window.Alpine = Alpine;
 
-Alpine.start();
+
+
+Alpine.store('nav', {
+  show: false,
+  toggle() {
+    this.show = ! this.show;
+  }
+});
+
+window.Alpine = Alpine;
+window.Alpine.start();
 
 const env = document.querySelector('body').dataset.env;
 
@@ -17,8 +26,3 @@ if ('serviceWorker' in navigator && env === 'production') {
     }
   });
 }
-
-$('.hamburger').on('click', function() {
-  $('header nav').toggleClass('active')
-  $(this).toggleClass('active');
-})
