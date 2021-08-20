@@ -9,6 +9,18 @@
       "url": "/fees/"
     },
     {
+      "text": "Team",
+      "url": "/team/"
+    },
+    {
+      "text": "Community",
+      "url": "/community/"
+    },
+    {
+      "text": "Mindfulness",
+      "url": "/mindfulness/"
+    },
+    {
       "text": "About",
       "url": "/about/"
     }

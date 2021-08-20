@@ -1,7 +1,7 @@
-<header>
+<header class="sticky z-40 w-screen bg-white top-0">
   <nav class="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="flex justify-between items-center h-16">
-      <figure class="flex flex-shrink-0 items-center space-x-1">
+      <figure class="z-50 space-x-1">
         <img
           alt="11st starter-kit logo"
           class="h-8 w-auto"
@@ -12,16 +12,16 @@
         <button x-data class="hamburger" x-on:click="$store.nav.toggle()" x-bind:class="{active: $store.nav.show}">
           <div class="hamburger__line"></div>
         </button>
-        <ul x-data x-bind:class="{active: $store.nav.show}" x-transition class="flex flex-col bg-white p-4 absolute inset-0 nav-items text-center pt-12 h-screen">
+        <ul x-data x-bind:class="{active: $store.nav.show}" x-transition class="overflow-y-scroll flex flex-col bg-white p-4 absolute inset-0 nav-items text-center pt-12 h-screen">
           {% for item in navigation.items %}
             {% if item.url == page.url %}
-              {% assign highlight = 'cursor-default text-6xl underline' %}
+              {% assign highlight = 'cursor-default text-4xl underline' %}
               {% assign current = 'aria-current="page"' %}
             {% else %}
-              {% assign highlight = 'text-5xl' %}
+              {% assign highlight = 'text-4xl' %}
               {% assign current = '' %}
             {% endif %}
-            <li class="py-6">
+            <li class="py-4 uppercase">
               <a
                 href="{{ item.url }}"
                 class="font-bold {{ highlight }}"

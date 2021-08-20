@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+
+body, main {
+    overflow-x: hidden;
+}
+
 .hamburger {
     position: fixed;
     top: 10px;
@@ -56,4 +61,159 @@
 }
 .nav-items.active {
     transform: translateX(0);
+}
+
+.pageTurn {
+    display: block;
+    width: 90px;
+    aspect-ratio: 1/1;
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.pageTurn::after {
+    content: '';
+    width: 90px;
+    aspect-ratio: 1/1;
+    background-color: #7FB6CB;
+    clip-path: polygon(0 0, 0% 100%, 100% 0);
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    box-shadow: 2px 3px 5px #405a64, -2px -3px 5px #405a64;
+}
+
+.container__imgs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100px;
+    padding: 8rem 0 4rem 0;
+}
+
+.container__imgs > img {
+    max-width: 100px;
+    height: auto;
+}
+
+.container__imgs > img:nth-child(1) {
+    justify-self: start;
+    transform: translateY(-1.5rem) rotate(25deg) scale(1.1);
+}
+.container__imgs > img:nth-child(2) {
+    justify-self: start;
+    transform: translateY(-1.7rem) rotate(12deg);
+}
+.container__imgs > img:nth-child(3) {
+    justify-self: end;
+    transform: translateY(1.5rem) rotate(-12deg);
+}
+.container__imgs > img:nth-child(4) {
+    justify-self: end;
+    transform: translateY(1.5rem) rotate(12deg);
+}
+
+.aim__container {
+    counter-reset: aim;
+}
+
+.aim {
+    position: relative;
+}
+
+.aim h1 {
+    margin-left: 4rem;
+    margin-top: 50px;
+    margin-bottom: 2rem;
+    padding-top: 25px;
+    font-weight: 600;
+    
+}
+.aim p {
+    margin-left: 1rem;
+}
+
+.aim::before {
+    counter-increment: aim;
+    z-index: -10;
+    font-size: 5rem;
+    font-style: italic;
+    opacity: 0.5;
+    color: white;
+    content: counter(aim);
+    position: absolute;
+    transform-origin: center;
+    left: -55px;
+    background-color: #62b7c496;
+    width: 150px;
+    height: 150px;
+    border-radius: 999px;
+    display: grid;
+    place-items: center;
+}
+
+.link--nextPage {
+    font-size:
+}
+
+.collapse--green {
+    display: block;
+    max-height: 0px;
+    transition: max-height .5s cubic-bezier(0, 1, 0, 1);
+    overflow: hidden;
+}
+
+.collapse--green.show {
+    max-height: 50em;
+    transition: max-height .5s ease-in-out
+}
+
+.blockquote {
+    position: relative;
+}
+
+.blockquote::before {
+    content: '\"';
+    font-size: 4rem;
+    opacity: 0.5;
+    color: #ebebeb;
+}
+.blockquote::after {
+    content: '\"';
+    font-size: 4rem;
+    opacity: 0.5;
+    color: #ebebeb;
+    position: absolute;
+    bottom: -3rem;
+    right: 0;
+}
+
+.cards {
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.459);
+    --offset: -1rem;
+    --rotation: -25deg;
+}
+
+.cards::before,
+.cards::after {
+    content: 'i';
+    position: absolute;
+    
+    z-index: -1;
+    font-size: 18rem;
+    color: #446469;
+}
+
+
+.cards::before {
+    transform: rotate(var(--rotation));
+    top: var(--offset);
+    left: var(--offset);
+}
+.cards::after {
+    transform: rotate(calc(-1 * var(--rotation)));
+    bottom: calc(-1 * var(--offset));
+    right: calc(-1 * var(--offset));
 }

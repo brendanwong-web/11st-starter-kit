@@ -1,0 +1,54 @@
+---
+layout: 'layouts/pages.html'
+title: 'About'
+meta:
+  desc:
+    '11st-Starter-Kit is a minimal starting point for building static websites
+    with 11ty, powered by Snowpack with Tailwind CSS and Alpine.js.'
+intro:
+  title: 'What we do'
+  main: 'Education tailored to your child'
+  desc:
+    'The programme at Learning Hearts Therapy is the by-product of her genuine passion and in-depth experience in the areas of foundational reading and numeracy development.'
+---
+
+<div class="bg-white max-w-xl mx-auto">
+    <ul class="shadow-box">
+						
+    {% collapseAbout "Years of Training and Experience", "bg-lhtblue-dark", "1" %}
+        <p>
+            Julene founded Learning Hearts Therapy almost 20 years ago
+            out of her home 'Montessori'. Then, an endearing little boy 
+            with ASD came to her for help, igniting a special calling in 
+            teaching - and the rest is history.
+        </p>
+        <p>
+            Julene finds the greatest challenge and satisfaction in helping children with learning difficulties. She has worked with children diagnosed with mild ASD, ADHD, Dyslexia, Dyspraxia, and SLI, as well as those from broken, troubled and disadvantaged backgrounds.
+        </p>
+        <p>
+            Julene believes firmly in the transfer of knowledge to all people who work with and nurture children, hence the many workshops she has conducted for both parents and teachers, to empower them to help children acquire critical reading and numeracy strategies.
+        </p>
+    {% endcollapseAbout %}
+    
+    {% collapseAbout "Teaching Approach and Methodology", "bg-lhtblue-darker", "2" %}
+        <p>
+            Here at Learning Hearts Therapy, we do not utilize any pre-packaged reading programme. Instead, our approach is to teach the way children learn, rather than expect them to learn the way we teach.
+        </p>
+        <p>
+            The Programme features and is aligned with what internationally recognised institutions and organisations (National Reading Panel, US; Department for Education, UK; National Council for Teachers of Mathematics) deem to be the 'best practices' in the teaching of foundational reading and numeracy skills for children. This includes the use of explicit, systematic, cumulative curricula and a multi-sensory approach, in addition to the integration of all sub-areas of learning (eg. reading, writing, spelling; mathematics in real life situations). Apart from these, the programme boasts of some special features:
+        </p>
+        <ul>
+            <li>Personalised teaching, in a one-to-one ratio, to each child's individual challenges and needs, and takes into consideration the whole child</li>
+            <li>Integrates several subject areas (eg. English and Literature/Geography) and bridges to standardised exams (PSLE, 'N/O' levels, iGCSEs</li>
+            <li>Developed by an educational therapist trained in the field of Specific Learning Difficulties, with extensive experience in the field, both as teacher and teacher trainer</li>
+            <li>Takes into account the unique challenges posed by Singaporean culture, language development and school curriculum</li>
+            <li>Focuses on building strategies and fundamental concepts, for children from N2 to Sec 4, particularly those with mild to moderate learning difficulties</li>
+            <li>Extends to secondary levels for Math, Science, English, Literature, and Geography, supported by our small but dedicated, hand-picked team</li>
+        </ul>
+    {% endcollapseAbout %}
+	
+
+    </ul>
+</div>
+
+<a href="/team/" class="link--nextPage text-2xl text-lhtblue uppercase float-right font-bold pr-4 pb-4 mt-8">team <i class="fas fa-arrow-right"></i></a>

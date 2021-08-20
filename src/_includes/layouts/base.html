@@ -12,9 +12,11 @@
   >
     {% include "partials/site-header.html" %}
 
-    <div class="py-10">
-      {% block content %}{% endblock %}
-    </div>
+    
+    {% block content %}
+    
+    {% endblock %}
+    
 
     {% include "partials/banner.html" %}
 

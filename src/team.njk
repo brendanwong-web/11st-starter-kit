@@ -1,0 +1,91 @@
+---
+layout: 'layouts/pages.html'
+title: 'team'
+intro:
+  title: 'Who we are'
+  main: 'Nurturer first, 
+  Teacher second.'
+  desc:
+    'Our teachers are hand-picked not just for their qualifications, but more importantly for their innate ability to inspire, and passion for imparting a love for learning in their students, versus simply scoring in exams.'
+---
+
+<div class="bg-lhtblue-dark profile text-white px-4 py-8">
+    <div class="mb-12">
+
+        <img src="../images/mum.jpg" alt="" class="rounded-full d-block mx-auto mb-4">
+        <h5 class="text-center text-2xl mb-4">Julene Tan</h5>
+        <h6 class="text-center mb-6">Principal Therapist</h6>
+        <p class="leading-7">
+            For over 10 years, Julene was the in-house reading specialist consultant at CHIJ Kellock where she taught P1 and P2 students and trained the teachers. Prior to these engagements, Julene was a part-time reading therapist with an established dyslexia remediation centre in Camden Medical Centre.
+        </p>
+        <div x-data="{show: false}">
+            
+            <div
+            class="relative overflow-hidden transition-all max-h-0 duration-500"
+            style="" x-ref="rm1" 
+            x-bind:style="show ? 'max-height: ' + $refs.rm1.scrollHeight + 'px' : ''"
+            >
+            
+            <ul class="list-disc my-4 px-4 pl-8 leading-7">
+                <li class="mb-2">Bachelor's degree from the National University of Singapore (Majoring in Linguistics/Geography)</li> 
+                <li class="mb-2">Masters in Counselling from Monash University</li>
+                <li class="mb-2">Masters in Education (Special Education) from Flinders University, Adelaide</li>
+                <li class="mb-2">Diploma(distinction) in Early Childhood Education from the Montessori Centre International London</li>
+                <li class="mb-2">Post-graduate specialist diploma in Specific Learning Difficulties (Dyslexia) from the renowned Hornsby International Dyslexia Centre in London</li> 
+                <li class="mb-2">British Psychological Society, Certified Test User</li> <li class="mb-2">Certified teacher for the Mymind programme, trained at Centrum Voor Mindfuless, Amsterdam</li>
+                <li class="mb-2">Oxford Mindfulness Centre Mindfulness-based cognitive Therapy teacher trained</li>
+            </ul>
+            
+        </div>
+        <button type="button" class="p-4 px-6 text-center border-2 ml-auto block rounded-xl mt-4 mb-8" @click="show = !show">
+            <div class="flex items-center justify-between text-yellow-50">
+                <span x-text="show ? 'Close' : 'Read More' ">
+                    Read more			
+                </span>
+            </div>
+        </button>
+        
+    </div>
+    <hr class="opacity-50">
+    </div>
+    <div>
+
+        <img src="../images/mum.jpg" alt="" class="rounded-full d-block mx-auto mb-4">
+        <h5 class="text-center text-2xl mb-4">Ellen Ong</h5>
+        <h6 class="text-center mb-6">Therapist</h6>
+        <p class="leading-7 mb-4">
+            Ellen started as an in-house legal counsel in Jakarta, Indonesia before moving to Singapore where she practised mainly as a compliance officer in various banks, stock broking firms and fund management companies.     
+        </p>
+        <div x-data="{show: false}">
+            
+            <div
+            class="relative overflow-hidden transition-all max-h-0 duration-500 leading-7"
+            style="" x-ref="rm1" 
+            x-bind:style="show ? 'max-height: ' + $refs.rm1.scrollHeight + 'px' : ''"
+            >
+            
+            <p class="mb-4">
+                Ellen met Julene at a workshop empowering parents to teach children reading and wanted to learn more about teaching her own child. Julene invited Ellen to observe her teaching at CHIJ Kellock and shortly after that, Ellen decided to give up her career and enter education.
+            </p>
+            <p class="mb-4">
+                Ellen spent the first year observing Julene, shadowing her teaching. In 2010 when the reading hearts programme was taken up by Shu Qun primary for all P1 and P2 pupils, Ellen joined the team to deliver it. Following that, Ellen took a sabbatical to have and take care of her second child and rejoined Julene in 2014 just before they started teaching the programme at Queenstown primary school. In 2015, they both decided to concentrate their energies on the children struggling with reading disabilities, stopping the school-based programme to focus entirely on educational therapy work. Ellen has been teaching with Julene ever since.
+            </p>
+            <p class="my-12 mt-10 text-gray-300 d-block mx-auto w-11/12 blockquote">
+                There is so much fulfillment in helping children with learning difficulties read fluently and spell accurately. It is a satisfying accomplishment when a child overcomes his or her learning difficulty and is more confident in reading and spelling and especially in themselves.
+            </p>
+            <p class="mb-4">
+                Ellen has found deep purpose in contributing to the well being of the children she teaches, and continues to invest in professional training and development to better help and support them.
+            </p>
+            
+        </div>
+        <button type="button" class="p-4 px-6 text-center border-2 ml-auto block rounded-xl mt-4" @click="show = !show">
+            <div class="flex items-center justify-between text-yellow-50">
+                <span x-text="show ? 'Close' : 'Read More' ">
+                    Read more			
+                </span>
+            </div>
+        </button>
+        
+    </div>
+    </div>
+</div>

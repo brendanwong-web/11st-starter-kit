@@ -1,0 +1,14 @@
+{% layout 'base.html' %}
+
+{% block content %}
+<main id="main-content" tabindex="-1">
+  <div class="w-10/12 px-4 pb-8">
+
+    <p class="text-md text-gray-400 mb-4">{{intro.title}}</p>
+    <h1 class="text-3xl font-bold leading-9 mb-4">{{intro.main}}</h1>
+    <p>{{intro.desc}}</p>
+  </div>
+    {{ content }}
+  
+</main>
+{% endblock %}
