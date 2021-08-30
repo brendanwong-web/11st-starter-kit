@@ -508,3 +508,9 @@ table {
     }
 }
 
+@media all and (min-width: 1280px) {
+    .prose {
+        font-size: 1.25rem;
+    }
+}
+
