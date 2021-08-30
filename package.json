@@ -7,10 +7,6 @@
     "npm": "7.x.x"
   },
   "main": "index.js",
-  "repository": {
-    "type": "git",
-    "url": "git@github.com:stefanfrede/11st-starter-kit.git"
-  },
   "keywords": [
     "alpinejs",
     "eleventy",
@@ -27,7 +23,7 @@
   "bugs": {
     "url": "https://github.com/stefanfrede/11st-starter-kit/issues"
   },
-  "homepage": "https://11st-starter-kit.netlify.app",
+  "homepage": "https://priceless-wiles-ee10e8.netlify.app",
   "browserslist": [
     "defaults",
     "maintained node versions",
