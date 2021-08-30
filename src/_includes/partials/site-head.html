@@ -23,29 +23,6 @@
   {{ page_title }}
 </title>
 
-<link rel="canonical" href="{{ current_url }}" />
-
-<meta property="og:site_name" content="{{ site_title }}" />
-<meta property="og:title" content="{{ page_title }}" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="{{ current_url }}" />
-
-{% if social_image %}
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta property="og:image" content="{{ social_image }}" />
-  <meta name="twitter:image" content="{{ social_image }}" />
-  <meta property="og:image:alt" content="Page image for {{ site.name }}" />
-  <meta name="twitter:image:alt" content="Page image for {{ site.name }}" />
-{% endif %}
-
-{% if meta.desc %}
-  <meta name="description" content="{{ meta.desc }}" />
-  <meta name="twitter:description" content="{{ meta.desc }}" />
-  <meta property="og:description" content="{{ meta.desc }}" />
-{% endif %}
-
-<meta name="theme-color" content="#4a5568" />
-
 <link rel="apple-touch-icon" href="/images/icons/icon-192x192.png" />
 <link rel="icon" href="/images/icons/favicon.svg" type="image/svg+xml" />
 <link rel="manifest" href="/manifest.json" />
