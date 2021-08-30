@@ -3,14 +3,21 @@ layout: 'layouts/pages.html'
 title: 'team'
 intro:
   title: 'Who we are'
-  main: 'Nurturer first, 
-  Teacher second.'
+  main: "
+  <p>
+    Nurturer First,
+  </p>  
+  <p>
+      Teacher Second
+  </p>
+  "
+  color: "#51787E"
   desc:
     'Our teachers are hand-picked not just for their qualifications, but more importantly for their innate ability to inspire, and passion for imparting a love for learning in their students, versus simply scoring in exams.'
 ---
 
-<div class="bg-lhtblue-dark profile text-white px-4 py-8">
-    <div class="mb-12">
+<div class="bg-lhtblue-dark xl:bg-white profile text-white px-4 py-8 xl:px-12 flex flex-col xl:flex-row xl:space-x-12">
+    <div class="mb-12 xl:mb-0 w-full p-4 xl:p-12 xl:bg-lhtblue-dark xl:rounded-xl">
 
         <img src="../images/mum.jpg" alt="" class="rounded-full d-block mx-auto mb-4">
         <h5 class="text-center text-2xl mb-4">Julene Tan</h5>
@@ -37,7 +44,7 @@ intro:
             </ul>
             
         </div>
-        <button type="button" class="p-4 px-6 text-center border-2 ml-auto block rounded-xl mt-4 mb-8" @click="show = !show">
+        <button type="button" class="p-4 px-6 text-center border-2 ml-auto block rounded-xl mt-4 xl:mt-12 mb-8" @click="show = !show">
             <div class="flex items-center justify-between text-yellow-50">
                 <span x-text="show ? 'Close' : 'Read More' ">
                     Read more			
@@ -46,9 +53,9 @@ intro:
         </button>
         
     </div>
-    <hr class="opacity-50">
+    <hr class="opacity-50 xl:hidden">
     </div>
-    <div>
+    <div class="w-full p-4 xl:p-12 xl:bg-lhtblue-dark xl:rounded-xl">
 
         <img src="../images/mum.jpg" alt="" class="rounded-full d-block mx-auto mb-4">
         <h5 class="text-center text-2xl mb-4">Ellen Ong</h5>
@@ -78,7 +85,7 @@ intro:
             </p>
             
         </div>
-        <button type="button" class="p-4 px-6 text-center border-2 ml-auto block rounded-xl mt-4" @click="show = !show">
+        <button type="button" class="p-4 px-6 text-center border-2 ml-auto block rounded-xl mt-4 xl:mt-12" @click="show = !show">
             <div class="flex items-center justify-between text-yellow-50">
                 <span x-text="show ? 'Close' : 'Read More' ">
                     Read more			

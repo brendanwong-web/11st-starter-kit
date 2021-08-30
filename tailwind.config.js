@@ -8,6 +8,9 @@ module.exports = {
     extend: {
       fontFamily: {
         sans: ['Inter var', ...defaultTheme.fontFamily.sans],
+        'oppins': ['Poppins', 'sans-serif'],
+        'ropa': ['Ropa Sans', 'sans-serif'],
+        'header': ['Playfair Display', 'serif'],
       },
     colors: {
       transparent: 'transparent',
@@ -19,7 +22,17 @@ module.exports = {
         light: '#7FB6CB',
         DEFAULT: '#84CEEB',
         dark: '#316B82',
-        darker: '#385B61'
+        darker: '#385B61',
+        footer: '#6CB0E7',
+        footerText: '#1E3E59'
+      },
+      lhtpurple: {
+        DEFAULT: '#832CF1'
+      },
+      lhtgreen: {
+        DEFAULT: '#AFE9DF',
+        border: '#2A7064',
+        fill: '#BFF6ED'
       }
     },
     fontSize: {
@@ -39,5 +52,5 @@ module.exports = {
     },
   },
   variants: {},
-  plugins: [require('@tailwindcss/typography')],
+  plugins: [require('@tailwindcss/typography'), require('@tailwindcss/aspect-ratio'),],
 };

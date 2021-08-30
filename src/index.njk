@@ -7,53 +7,173 @@ meta:
     with 11ty, powered by Snowpack with Tailwind CSS and Alpine.js.'
 ---
 
-<div class="bg-lhtblue relative pb-24">
-  <div class="container__imgs">
+<div class="bg-lhtblue relative pb-24 xl:pb-0 flex flex-col xl:flex-row-reverse">
+  <div class="container__imgs xl:w-5/12 xl:px-16 xl:py-28">
     <img src="images/index1.jpeg" alt="" xyz="fade big-75 stagger" class="xyz-in">
     <img src="images/index1.jpeg" alt="" xyz="fade big-75 stagger" class="xyz-in">
     <img src="images/index1.jpeg" alt="" xyz="fade big-75 stagger" class="xyz-in">
     <img src="images/index1.jpeg" alt="" xyz="fade big-75 stagger" class="xyz-in">
   </div>
-  <div class="container px-4 text-white">
-    <h1 class="text-3xl pb-4">
+  <div class="container px-4 xl:px-16 xl:py-16 text-white xl:w-7/12 xl:pb-24">
+    <h1 class="text-3xl xl:text-6xl xl:leading-none pb-4 xl:pb-12">
       After more than <strong>20 years</strong> of experience in educational therapy
     </h1>
-    <p class="text-green-900 pb-4">
+    <p class="text-green-900 pb-4 xl:text-3xl xl:pb-0 xl:leading-normal">
       We’ve learnt to teach children the way they learn, not expect them to learn the way we teach
     </p>
-    <a href="/" class="block w-max bg-lhtblue-dark hover:bg-green-800 text-white font-bold text-base py-4 px-8 rounded-full">Book your first consult</a>
+    <a href="/fees/" class="block w-max bg-lhtblue-dark hover:bg-green-800 text-white font-bold text-base py-4 px-8 rounded-full xl:hidden">Book your first consult</a>
   </div>
-  <div class="pageTurn">
+  <div class="pageTurn xl:hidden">
 
   </div>
 </div>
-<div class="container px-4 text-gray flex flex-col pt-4 aim__container">
+<div class="container mx-auto flex-row justify-center hidden xl:flex -mt-8 space-x-6">
+  <a href="/fees/" class="z-50 inline-block w-max bg-lhtblue-dark hover:bg-lhtblue-darker text-white font-bold text-base py-4 px-8 rounded-full">Book your first consult</a>
+  <a href="/mindfulness/" class="z-50 inline-block w-max bg-red-700 hover:bg-red-900 text-white font-bold text-base py-4 px-8 rounded-full">Mindfulness@Learning Hearts</a>
+</div>
+<div class="container mx-auto xl:space-x-6 px-4 xl:px-16 text-gray flex flex-col xl:flex-row xl:justify-center pt-4 xl:py-12 xl:w-full aim__container">
   <div class="aim mb-8">
     <h1 class="text-3xl pb-4">
       Our Aim
     </h1>
-    <p class="pb-4">
+    <p class="pb-4 xl:leading-9">
       is to get to know each child as an individual and provide for his/her total development accademically, socially, and emotionally
     </p>
-    <hr>
+    <hr class="xl:hidden">
   </div>
   <div class="aim mb-8">
     <h1 class="text-3xl pb-4">
       Our Mission
     </h1>
-    <p class="pb-4">
+    <p class="pb-4 xl:leading-9">
       is to get to know each child as an individual and provide for his/her total development accademically, socially, and emotionally
     </p>
-    <hr>
+    <hr class="xl:hidden">
   </div>
   <div class="aim mb-8">
     <h1 class="text-3xl pb-4">
       Our Passion
     </h1>
-    <p class="pb-4">
+    <p class="pb-4 xl:leading-9">
       is to get to know each child as an individual and provide for his/her total development accademically, socially, and emotionally
     </p>
   </div>
 </div>
+<div class="grid grid-cols-1 grid-rows-auto xl:grid-cols-2 xl:bg-lhtgreen xl:gap-16 xl:p-16">
+  <div class="swiper-container--mine row-start-1 row-span-1 xl:p-10 xl:border-2 xl:border-lhtgreen-border xl:rounded-xl xl:row-start-2">
+  
+    <div class="swiper-container mySwiper2 bg-lhtgreen">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="bg-lhtgreen px-10 py-8 prose h-full flex flex-col justify-between" x-data="{show: false}">
+            <div>
+    
+              <p>
+                The name Learning Hearts is apt as the people who make this learning centre happen, operate from their hearts. I first met Julene, who my son affectionately calls Aunty Ju, in early 2018. She was recommended by my son's educational psychologist. I am grateful that she put me in contact with Julene. From the first phone call, I knew that she had my child's interest at heart...  
+              </p>
+              <div x-show="show" x-transition>
+                <p>
+                  We started with Julene for learning therapy at first. My son was identified with profound dyslexia and he has a lot of anxiety, especially separation anxiety. My son then moved on to be guided by Ellen, and together they put my son at ease. So much so that he looks forward to learning therapy weekly! Fast forward, and my son has improved by leaps and bounds. We will always be in touch with Julene and Ellen, even after Dean graduates from Learning Hearts, as Julene and Ellen are now our confidants. Thank you! Love Aized & Dean   
+                </p>
+                
+              </div>
+              <button x-on:click="show = ! show" x-html="show ? 'Less' : 'More'" class="mt-6 block ml-auto px-3 py-1 text-green-900 border-2 border-green-900 rounded-xl">
+                Read more
+              </button>
+            </div>
+            <h6 class="text-center mt-8">Aized</h6>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="bg-lhtgreen px-10 py-8 prose h-full flex flex-col justify-between" x-data="{show: false}">
+            <div>
+    
+              <p>
+                Our son came under the tutelage of Julene when he was 13, who was recommended by both our educational psychologist and occupational therapist. Julene imparted effective study skills and strategies that helped him become an effective and enthusiastic student.  
+              </p>
+              <div x-show="show" x-transition>
+                <p>
+                  As his academic results improved, his self confidence also increased. This now translates into a recurring systematic approach to learning new skills and subjects, long after he had left Learning Hearts Therapy. Julene is more than an educational therapist; she is a friend to students and parents alike. She is empathetic, kind, approachable, fun-loving and yet remains driven to ensure her students grow up to be independent and effective learners, and more importantly, to find joy in life Long learning! Thank you Julene!  
+                </p>
+              </div>
+              <button x-on:click="show = ! show" x-html="show ? 'Less' : 'More'" class="mt-6 block ml-auto px-3 py-1 text-green-900 border-2 border-green-900 rounded-xl">
+                Read more
+              </button>
+            </div>
+            <h6 class="text-center mt-8">Audrey</h6>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="bg-lhtgreen px-10 py-8 prose h-full flex flex-col justify-between" x-data="{show: false}">
+            <div>
+    
+              <p>
+                Two of our children had learning disabilities and could not keep pace with their peers in school. They needed specialized help. We did not know how to help them, but Julene did. In her care, our daughter regained her confidence her reading, spelling and mathematics.  
+              </p>
+              <div x-show="show" x-transition>
+                <p>
+                  Our son who was delayed in his speech was finally able to learn his alphabet too! We are very grateful for Julene's expertise and kindness that has so profoundly impacted the lives of our children and brought joy in our family.  
+                </p>
+              </div>
+              <button x-on:click="show = ! show" x-html="show ? 'Less' : 'More'" class="mt-6 block ml-auto px-3 py-1 text-green-900 border-2 border-green-900 rounded-xl">
+                Read more
+              </button>
+            </div>
+            <h6 class="text-center mt-8">Jason B.</h6>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="bg-lhtgreen px-10 py-8 prose h-full flex flex-col justify-between" x-data="{show: false}">
+            <div>
+    
+              <p>
+                I met Julene the month before my oldest daughter started mainstream primary school. My daughter was one of those singled out to attend English reading lessons prior to the start of school. She wasn't able to read fluently then and I knew this would be an issue. 
+              </p>
+              <div x-show="show" x-transition>
+                <p>
+                  I then engaged Julene to teach both my oldest and younger daughters on a private basis. Ju had a knack of knowing what the girls needed. When it was time to call in the educational psychologist despite extensive therapy, she helped facilitate the process. She was with us during the most difficult times, through the diagnostic process, even in assuring me that all will be well even with both girls being diagnosed with learning disabilities. Whenever each of them needed extra help or attention, Ju would not hesitate to highlight this to me and would give them the extra help they needed. Especially in their final years leading up to their national exams, the girls would both fight to get a slot with Ju. Who does that? But it's kudos to the love and acceptance that Ju has instilled in the girls. They have such confidence in themselves that no one would know that they have any learning disability.  
+                </p>
+                <p>
+                  I'm just grateful to God for putting Ju in our path. She's not just their therapist, she's become their friend and confidante. Truly hard to find a gem like her, and though not the ultimate goal, both girls did extremely well in their Ns and O's - A1 for English and Lit (almost unheard of for a dyslexic child!), single-digit aggregate as well as direct Poly admission.
+                </p>
+              </div>
+              <button x-on:click="show = ! show" x-html="show ? 'Less' : 'More'" class="mt-6 block ml-auto px-3 py-1 text-green-900 border-2 border-green-900 rounded-xl">
+                Read more
+              </button>
+            </div>
+            <h6 class="text-center mt-8">Angelina</h6>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+  </div>
+  <div class="p-4 py-8 xl:p-0 xl:col-start-1 xl:col-end-2 xl:row-start-1 xl:row-span-1">
+    <div class="info--community info--index rounded-xl p-4 xl:p-10 xl:border-2 xl:border-lhtgreen-border xl:bg-lhtgreen-fill text-gray-900">
+      <h6 class="text-2xl xl:text-3xl mb-4">
+        <b>All children</b> are capable
+        of learning, <b>however</b>
+      </h6>
+      <p class="xl:text-2xl prose">
+        Some children simply require a different system of learning,
+        or a different style of teaching
+      </p>
+    </div>
 
-<a href="/about/" class="link--nextPage text-2xl text-lhtblue uppercase float-right font-bold pr-4 pb-4">About <i class="fas fa-arrow-right"></i></a>
+  </div>
+  
+  <div class="bg-lhtblue-dark xl:bg-lhtgreen profile text-white xl:text-gray-900 xl:rounded-xl px-4 py-6 xl:col-start-2 xl:col-span-1 xl:row-start-1 xl:row-span-2 xl:p-10 xl:border-2 xl:border-lhtgreen-border">
+    <div class="aspect-w-16 aspect-h-9 rounded-xl mb-8">
+
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/nV8QOmvAhCA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <p class="xl:text-2xl prose text-white">
+      The video showcases a student of Learning Hearts Therapy before and after our reading programme. The child came to us barely able to read and with severe gaps in his english education. Watch the video above to see how much his confidence and ability to read and comprehend increased after 20 sessions in our Programme.
+    </p>
+  </div>
+</div>
+
+<!-- <a href="/about/" class="link--nextPage text-2xl text-lhtblue uppercase float-right font-bold pr-4 pb-4">About <i class="fas fa-arrow-right"></i></a>
+ -->

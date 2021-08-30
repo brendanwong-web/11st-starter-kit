@@ -5,12 +5,16 @@
       "url": "/"
     },
     {
-      "text": "Fees",
-      "url": "/fees/"
+      "text": "About",
+      "url": "/about/"
     },
     {
       "text": "Team",
       "url": "/team/"
+    },
+    {
+      "text": "Fees",
+      "url": "/fees/"
     },
     {
       "text": "Community",
@@ -19,10 +23,6 @@
     {
       "text": "Mindfulness",
       "url": "/mindfulness/"
-    },
-    {
-      "text": "About",
-      "url": "/about/"
     }
   ]
 }

@@ -7,15 +7,23 @@ meta:
     with 11ty, powered by Snowpack with Tailwind CSS and Alpine.js.'
 intro:
   title: 'What we do'
-  main: 'Education tailored to your child'
+  main: "
+  <p>
+   Education Tailored
+  </p>
+  <p>
+    To Your Child
+  </p>
+  "
+  color: "#5A939C"
   desc:
     'The programme at Learning Hearts Therapy is the by-product of her genuine passion and in-depth experience in the areas of foundational reading and numeracy development.'
 ---
 
-<div class="bg-white max-w-xl mx-auto">
-    <ul class="shadow-box">
+<div class="bg-white max-w-6xl mx-auto xl:border-2 xl:border-black xl:rounded-xl xl:mt-32 xl:mb-20">
+    <ul class="shadow-box relative grid grid-cols-1 xl:grid-cols-2 xl:auto-rows-max" x-data="{selected: $store.mqMobile ? null : 1}">
 						
-    {% collapseAbout "Years of Training and Experience", "bg-lhtblue-dark", "1" %}
+    {% collapseAbout "Years of Training and Experience", "bg-lhtblue-dark", "1", "about1.jpg" %}
         <p>
             Julene founded Learning Hearts Therapy almost 20 years ago
             out of her home 'Montessori'. Then, an endearing little boy 
@@ -30,7 +38,7 @@ intro:
         </p>
     {% endcollapseAbout %}
     
-    {% collapseAbout "Teaching Approach and Methodology", "bg-lhtblue-darker", "2" %}
+    {% collapseAbout "Teaching Approach and Methodology", "bg-lhtblue-darker", "2", "about2.jpg" %}
         <p>
             Here at Learning Hearts Therapy, we do not utilize any pre-packaged reading programme. Instead, our approach is to teach the way children learn, rather than expect them to learn the way we teach.
         </p>
@@ -51,4 +59,5 @@ intro:
     </ul>
 </div>
 
-<a href="/team/" class="link--nextPage text-2xl text-lhtblue uppercase float-right font-bold pr-4 pb-4 mt-8">team <i class="fas fa-arrow-right"></i></a>
+<!-- <a href="/team/" class="link--nextPage text-2xl text-lhtblue uppercase float-right font-bold pr-4 pb-4 mt-8">team <i class="fas fa-arrow-right"></i></a>
+ -->

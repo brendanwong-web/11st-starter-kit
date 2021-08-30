@@ -1,6 +1,6 @@
-<header class="sticky z-40 w-screen bg-white top-0">
+<header class="sticky z-40 w-screen bg-white top-0 xl:hidden">
   <nav class="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="flex justify-between items-center h-16">
+    <div class="flex justify-between xl:justify-center items-center h-16">
       <figure class="z-50 space-x-1">
         <img
           alt="11st starter-kit logo"
@@ -13,6 +13,44 @@
           <div class="hamburger__line"></div>
         </button>
         <ul x-data x-bind:class="{active: $store.nav.show}" x-transition class="overflow-y-scroll flex flex-col bg-white p-4 absolute inset-0 nav-items text-center pt-12 h-screen">
+          {% for item in navigation.items %}
+            {% if item.url == page.url %}
+              {% assign highlight = 'cursor-default text-4xl underline' %}
+              {% assign current = 'aria-current="page"' %}
+            {% else %}
+              {% assign highlight = 'text-4xl' %}
+              {% assign current = '' %}
+            {% endif %}
+            <li class="py-4 uppercase">
+              <a
+                href="{{ item.url }}"
+                class="font-bold {{ highlight }}"
+                {{ current }}
+              >
+                {{ item.text }}
+              </a>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+<header class="z-40 h-screen w-16 fixed left-0 bg-white hidden xl:block border-2 border-black">
+  <nav class="h-full">
+    <div class="flex flex-col justify-center items-center h-full">
+      <figure class="z-40 transform -rotate-90 w-96">
+        <img
+          alt="11st starter-kit logo"
+          class="w-64 mx-auto h-auto"
+          src="/images/drawing.png"
+        />
+      </figure>
+      <div x-data="{navOpen: false}">
+        <button x-data class="hamburger" x-on:click="$store.nav.toggle()" x-bind:class="{active: $store.nav.show}">
+          <div class="hamburger__line"></div>
+        </button>
+        <ul x-data x-bind:class="{active: $store.nav.show}" x-transition class="z-50 border-2 border-black flex flex-col bg-white p-4 absolute left-0 -top-2 nav-items text-center pt-12 h-screen w-96">
           {% for item in navigation.items %}
             {% if item.url == page.url %}
               {% assign highlight = 'cursor-default text-4xl underline' %}

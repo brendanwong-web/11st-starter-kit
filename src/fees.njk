@@ -3,19 +3,28 @@ layout: 'layouts/pages.html'
 title: 'fees'
 intro:
   title: 'Fees'
-  main: 'Your journey with us starts here'
+  main: "
+  <p>
+    Your Journey With us
+  </p>
+  <p>
+    Starts Here
+  </p>
+  "
+  color: "#F8D4C0"
   desc:
     'Our usual procedure is for the parent to first book a consultation with our principal therapist. Following that, if we determine we can be of help, a thorough assessment is conducted to help us develop a learning profile and therapy plan, customised to your child.'
+  padding: 'pb-8'
 ---
 
-<div class="container px-4">
+<div class="container px-4 mx-auto xl:mb-24">
 
-  <div class="border-2 border-green-900 rounded-xl cards">
-    <div class="card py-8 px-8 border-b-2 border-green-700">
+  <div class="border-2 border-green-900 rounded-xl cards flex flex-col xl:flex-row">
+    <div class="card xl:w-full py-8 px-6 xl:p-12 border-b-2 xl:border-b-0 xl:border-r-2 border-green-700">
       <div class="text-center flex flex-col">
   
         <img src="../images/consult.png" alt="" class="w-4/12 block mx-auto mb-4">
-        <h5 class="text-3xl text-green-700 mb-6">
+        <h5 class="text-3xl font-ropa mb-6">
           Consultation
         </h5>
         <h6 class="text-2xl">
@@ -23,32 +32,40 @@ intro:
         </h6>
       </div>
     </div>
-    <div class="card py-8 px-8 border-b-2 border-green-700">
+    <div class="card xl:w-full py-8 px-6 xl:p-12 border-b-2 xl:border-b-0 xl:border-r-2 border-green-700">
       <div class="text-center flex flex-col">
   
         <img src="../images/consult.png" alt="" class="w-4/12 block mx-auto mb-4">
-        <h5 class="text-3xl text-green-700 mb-6">
+        <h5 class="text-3xl font-ropa mb-6">
           Therapy
         </h5>
         <h6 class="text-2xl">
-          Varies by learning phase<br>
+          Varies by learning phase<br><br>
           Payable quarterly in the first month of each quarter
         </h6>
       </div>
     </div>
-    <div class="card py-8 px-8">
+    <div class="card xl:w-full py-8 px-6 xl:p-12">
       <div class="text-center flex flex-col">
   
         <img src="../images/consult.png" alt="" class="w-4/12 block mx-auto mb-4">
-        <h5 class="text-3xl text-green-700 mb-6">
+        <h5 class="text-3xl font-ropa mb-6">
           Registration
         </h5>
         <h6 class="text-2xl">
-          $100 per subject time slot (payable annually)
+          $100 per subject time slot<sup>1</sup>
           <br><br>
-One month’s fees as deposit, refundable when T & C’s are met
+            One month’s fees as deposit, refundable<sup>2</sup>
         </h6>
       </div>
     </div>
+  </div>
+  <div class="prose block mx-auto my-6 xl:mt-12 text-center">
+    <p>
+      <sup>1</sup> Payable annually
+    </p>
+    <p>
+      <sup>2</sup> When Terms & Conditions are met
+    </p>
   </div>
 </div>
