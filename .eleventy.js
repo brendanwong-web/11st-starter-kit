@@ -24,7 +24,7 @@ module.exports = function (config) {
             x-bind:style="selected == ${idx} ? 'max-height: ' + ($refs.container${idx}.scrollHeight + 48) + 'px' : ''"
             >
         <div class="xl:max-w-sm p-4 xl:p-12 xl:pt-6">
-          <img src="../images/${img}" alt="">
+          <img class="rounded-xl" src="../images/${img}" alt="">
         </div>
         <div class="p-4 xl:p-12 xl:pt-6 prose">
           ${content}
@@ -37,7 +37,7 @@ module.exports = function (config) {
   // Static assets to pass through
   config.addPassthroughCopy('./src/fonts');
   config.addPassthroughCopy('./src/images');
-  config.addPassthroughCopy('./src/favicon.ico');
+  config.addPassthroughCopy('./src/favicon.png');
   config.addPassthroughCopy('./src/manifest.json');
   config.addPassthroughCopy('./src/robots.txt');
 

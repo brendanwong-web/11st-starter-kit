@@ -48,3 +48,29 @@ var swiper = new Swiper(".mySwiper2", {
     el: ".swiper-pagination"
   }
 });
+
+let options = {
+  root: document.querySelector('#scrollArea'),
+  rootMargin: '30px 0px',
+  threshold: 0.7
+}
+
+let xyzAnimate = (entries, observer) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      console.log('seen')
+      entry.target.classList.add('xyz-in')
+    }
+  })
+}
+
+let observer = new IntersectionObserver(xyzAnimate, options);
+
+
+let targets = document.querySelectorAll('*[xyz]')
+
+for (let i = 0;i<targets.length;i++) {
+
+  observer.observe(targets[i])
+}
+
