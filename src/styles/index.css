@@ -155,19 +155,19 @@ body, main {
 @media all and (min-width: 1280px) {
     .container__imgs > img:nth-child(1) {
         justify-self: start;
-        transform: translateY(-1.5rem) rotate(25deg) scale(1.1);
+        transform: translateY(-1.5rem) rotate(-12deg) scale(1.5);
     }
     .container__imgs > img:nth-child(2) {
         justify-self: start;
-        transform: translateY(-1.7rem) rotate(12deg);
+        transform: translateY(-1.7rem) rotate(12deg) scale(1.5);
     }
     .container__imgs > img:nth-child(3) {
         justify-self: end;
-        transform: translateY(1.5rem) rotate(-12deg);
+        transform: translateY(1.5rem) rotate(-12deg) scale(2);
     }
     .container__imgs > img:nth-child(4) {
         justify-self: end;
-        transform: translateY(1.5rem) rotate(12deg);
+        transform: translateY(1.5rem) rotate(12deg) scale(2.5);
     }
     
 }
