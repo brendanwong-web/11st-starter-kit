@@ -145,11 +145,11 @@ body, main {
 }
 .container__imgs > img:nth-child(3) {
     justify-self: end;
-    transform: translateY(1.5rem) rotate(-12deg);
+    transform: translateY(1.5rem) rotate(-12deg) scale(1.25);
 }
 .container__imgs > img:nth-child(4) {
     justify-self: end;
-    transform: translateY(1.5rem) rotate(12deg);
+    transform: translateY(1.5rem) rotate(12deg) scale(1.75);
 }
 
 @media all and (min-width: 1280px) {
@@ -354,7 +354,7 @@ body, main {
     color: rgba(83, 50, 248, 0.329);
     opacity: 0.8;
     z-index: 20;
-    font-size: 4rem;
+    font-size: 3rem;
 }
 
 .swiper-button-next, .swiper-button-prev {
