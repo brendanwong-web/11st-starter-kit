@@ -15,8 +15,9 @@ module.exports = {
     colors: {
       transparent: 'transparent',
       current: 'currentColor',
-      blue: colors.sky,
+      blue: colors.sky, 
       purple: colors.violet,
+      red: colors.rose,
       green: colors.teal,
       lhtblue: {
         light: '#7FB6CB',

@@ -351,7 +351,7 @@ body, main {
     position: absolute;
     top: 0;
     left: 1rem;
-    color: rgba(83, 50, 248, 0.329);
+    color: rgba(73, 73, 73, 0.329);
     opacity: 0.8;
     z-index: 20;
     font-size: 3rem;
