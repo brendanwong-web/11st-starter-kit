@@ -434,6 +434,7 @@ body, main {
         top: -5rem;
         width: 70px;
         height: 70px;
+        transform: translateX(-50%);
         content: '';
         background-color: #C4C4C4;
         border-radius: 99px;
