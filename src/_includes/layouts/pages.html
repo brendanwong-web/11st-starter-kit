@@ -2,11 +2,13 @@
 
 {% block content %}
 <main id="main-content" tabindex="-1" class="pl-0 xl:pl-16">
-  <div class="w-10/12 px-4 pb-8 xl:w-full xl:text-center xl:py-16 xl:pb-32 main-desc" style="--bg-color: {{ intro.color }}">
-
-    <p xyz="flip-up delay-5 fade" class="xyz-in text-md text-gray-400 mb-4 font-header xl:text-3xl xl:mb-8">{{intro.title}}</p>
-    <h1 xyz="right-50% fade" class="xyz-in text-3xl font-bold leading-9 mb-6 xl:text-5xl xl:w-5/12 xl:mx-auto xl:block xl:mb-16 xl:leading-tight main-intro" style="--bg-color: {{ intro.color }}">{{intro.main | safe}}</h1>
-    <p xyz="left-50%" class="text-left xl:w-7/12 xl:ml-48 xl:block xl:text-3xl">{{intro.desc}}</p>
+  <div class="w-75 mx-auto px-4 pb-8 xl:w-100 xl:text-center xl:py-16 xl:pb-32 main-desc" style="--bg-color: {{ intro.color }}">
+    <div class="xl:w-7/12 xl:mx-auto">
+      
+      <p xyz="flip-up delay-5 fade" class="xyz-in text-md text-gray-400 mb-4 font-header xl:text-3xl xl:mb-8">{{intro.title}}</p>
+      <h1 xyz="right-50% fade" class="xyz-in text-3xl font-bold leading-9 mb-6 xl:text-5xl xl:w-5/12 xl:mx-auto xl:block xl:mb-16 xl:leading-tight main-intro" style="--bg-color: {{ intro.color }}">{{intro.main | safe}}</h1>
+      <p xyz="left-50%" class="text-left xl:w-9/12 xl:ml-48 xl:block xl:text-3xl">{{intro.desc}}</p>
+    </div>
   </div>
     {{ content }}
   
