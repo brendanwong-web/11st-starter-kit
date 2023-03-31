@@ -40,15 +40,6 @@ meta:
   </div>
   <div class="aim mb-8">
     <h1 class="text-3xl pb-4">
-      Our Mission
-    </h1>
-    <p class="pb-4 xl:leading-9">
-      is to get to know each child as an individual and provide for his/her total development accademically, socially, and emotionally
-    </p>
-    <hr class="xl:hidden">
-  </div>
-  <div class="aim mb-8">
-    <h1 class="text-3xl pb-4">
       Our Passion
     </h1>
     <p class="pb-4 xl:leading-9">
@@ -61,6 +52,28 @@ meta:
   
     <div class="swiper-container mySwiper2 bg-lhtgreen">
       <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="bg-lhtgreen px-4 py-8 prose h-full flex flex-col justify-between" x-data="{show: false}">
+            <div>
+    
+              <p>
+                I am grateful to auntie Julene who had journeyed with me since 4 years ago when I started my secondary education after i had been diagnosed with dyslexia. 
+              </p>
+              <div x-show="show" x-transition>
+                <p>
+                  I started to learn from basics in reading and processing words. This had slowly helped me to overcome my challenge of reading comprehension and eventually scored an A for literature at my IGCSE. I also had poor understanding of concepts in Maths and Brendon would creatively guide me to see the patterns through numerous Maths practices. Lastly uncle Daniel would patiently help me to break down difficult concepts in chemistry and biology; I went on to score A* in three of these subjects. 
+                </p>
+                <p>
+                  In addition to coaching me in academics, auntie Julene also provided me with emotional counselling and taught me mindfulness techniques so I am self-aware to regulate my emotions. With this stability, I can learn better. Thank you very much auntie Julene, uncle Dan and Brendon.     
+                </p>
+              </div>
+              <button x-on:click="show = ! show" x-html="show ? 'Less' : 'More'" class="mt-6 block ml-auto px-3 py-1 text-green-900 border-2 border-green-900 rounded-xl">
+                Read more
+              </button>
+            </div>
+            <h6 class="text-center mt-8">Samantha Ho, Jan 2023</h6>
+          </div>
+        </div>
         <div class="swiper-slide">
           <div class="bg-lhtgreen px-4 py-8 prose h-full flex flex-col justify-between" x-data="{show: false}">
             <div>
@@ -84,7 +97,7 @@ meta:
                 Read more
               </button>
             </div>
-            <h6 class="text-center mt-8">Diana Ho</h6>
+            <h6 class="text-center mt-8">Diana Ho, Jan 2023</h6>
           </div>
         </div>
         <div class="swiper-slide">
@@ -112,7 +125,7 @@ meta:
                 Read more
               </button>
             </div>
-            <h6 class="text-center mt-8">Gabe Lim</h6>
+            <h6 class="text-center mt-8">Gabe Lim, Dec 2023</h6>
           </div>
         </div>
         <div class="swiper-slide">
